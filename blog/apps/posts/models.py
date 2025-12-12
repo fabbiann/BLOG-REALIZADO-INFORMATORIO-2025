@@ -41,7 +41,6 @@ class Post(models.Model):
 
     # 3. Modelo Comentario
 class Comentario(models.Model):
-    # Usamos Post directamente porque está definido más arriba en este archivo
     posts = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comentarios')
     usuario = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comentarios')
     texto = models.TextField()

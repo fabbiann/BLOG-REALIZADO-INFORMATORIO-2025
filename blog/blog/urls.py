@@ -9,9 +9,9 @@ from apps.posts.views import (
     posts_por_categoria, 
     acerca_de, 
     contacto,
-    borrar_comentario,  # <--- Faltaba esto
-    borrar_post,        # <--- Faltaba esto
-    crear_post,          # <--- Faltaba esto
+    borrar_comentario,  
+    borrar_post,        
+    crear_post,          
     editar_post,
     editar_comentario
 )
@@ -32,7 +32,7 @@ urlpatterns = [
     path('categoria/<int:categoria_id>/', posts_por_categoria, name='posts_por_categoria'),
     path('crear_post/', crear_post, name='crear_post'),
 
-    # Rutas de Borrado (Las que daban error)
+    # Rutas de Borrado
     path('borrar-comentario/<int:comentario_id>/', borrar_comentario, name='borrar_comentario'),
     path('borrar-post/<int:pk>/', borrar_post, name='borrar_post'),
 
