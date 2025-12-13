@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,7 +10,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <a class="navbar-brand" href="/">🚀 Blog Informatorio</a>
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="{% url 'index' %}">
+                <img src="{% static 'img/logo_informatorio.jpg' %}" 
+                     alt="Logo Informatorio" 
+                     class="d-inline-block align-text-top me-2 rounded-circle shadow-sm"
+                     style="width: 40px; height: 40px; object-fit: cover; border: 2px solid rgba(255, 255, 255, 0);">
+
+                <span>Blog Informatorio</span>
+            </a>
             
             <div class="d-flex text-white align-items-center order-lg-2">
                 {% if user.is_authenticated %}
