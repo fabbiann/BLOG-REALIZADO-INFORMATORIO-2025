@@ -40,4 +40,18 @@ El sistema implementa una lógica de permisos estricta basada en los requerimien
 * **Control de Versiones:** Git & GitHub.
 
 ---
+
+## 🔐 Credenciales de Acceso (Testing)
+
+Para facilitar la evaluación del proyecto, se han pre-cargado los siguientes usuarios con sus respectivos roles en la base de datos:
+
+| Rol / Perfil | Usuario | Contraseña | Permisos Clave |
+| :--- | :--- | :--- | :--- |
+| **👑 Superusuario (Root)** | `root` | `admin12345` | Acceso Total + Panel Admin |
+| **🤝 Colaborador** | `colaborador1` | `staff123` | Crear/Editar Posts + Moderar Comentarios |
+| **👤 Miembro** | `pepe` | `usuario123` | Comentar + Editar solo *sus* comentarios |
+
+
+
+---
 *Proyecto realizado para el curso de Desarrollo Web - Informatorio Chaco.*
